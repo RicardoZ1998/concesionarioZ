@@ -1,0 +1,34 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 75px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 1000;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo-h1{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    padding-left: 13px;
+    font: bold;
+}
+
+.header-contacto-p{
+    font-size: 24px;
+    color: rgb(123, 131, 124);
+    padding: 11px 13px 0px 0px;
+}
+
+.header-contacto-p strong{
+    color: rgb(107, 109, 107);
+}
+
+
