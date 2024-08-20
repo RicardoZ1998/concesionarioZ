@@ -1,3 +1,5 @@
+/* DISEÑO DE LA SECTION UNO */
+
 .section-uno{
     background: rgb(255, 255, 255);
     width: 100%;
@@ -60,29 +62,167 @@
 }
 
 
-.section-dos{
-    border: 1px solid black;
-    background: rgb(255, 255, 255);
-    width: 100%;
-    height: 100%;
-}
+/* DISEÑO DE LA SECTION DOS 
 
-.section-dos-article-dos{
+formulario*/
+
+.section-dos {
+    background: #e0e4f1;
+    width: 100%;
+    padding: 10px 0;
+    
+  }
+  
+  .section-dos-article-dos {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    margin-top: 25px;
-    border: 1px solid green;
+    padding: 10px;
+    gap: 50px;
+  }
+  
+  .content-form{
+    font-family: Nunito, sans-serif;
+  }
+  
+  .text-blk {
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  .form-wrapper {
+    background-color: #ffffff;
+    padding: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    text-align: center;
+  }
+  
+  .contactus-head {
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: 900;
+  }
+  
+  .contactus-subhead {
+    color: #9c9c9c;
+    margin-bottom: 58px;
+  }
+  
+  .responsive-container-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 22px;
+  }
+  
+  .responsive-cell-block {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input, .textinput {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #eeeeee;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #000;
+  }
+  
+  .textinput {
+    min-height: 150px;
+    min-width: 500px;
+    resize: vertical;
+  }
+  
+  .input-title {
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #9c9c9c;
+  }
+  
+  .submit-btn {
+    width: 25%;
+    background-color: #03a9f4;
+    height: 50px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0381fe;
+  }
+  
+  .social-media-links {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 250px;
+    margin: 30px auto 20px;
+  }
+  
+  .link-img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  ::placeholder {
+    color: #dadada;
+  }
+  
+  @media (max-width: 768px) {
+    .responsive-cell-block {
+      min-width: 100%;
+    }
+  
+    .form-wrapper {
+      margin-top: 80px;
+      padding: 50px 20px;
+    }
+  }
+  
+
+  /*DISEÑO DE LA SECTION DOS Mapa */
+
+  
+  .content-map {
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    text-align: center;
+    height: 691px;
+    padding: 10px;
+  }
+
+.title-map{
+  text-align: center;
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 900;
+  font-family: Nunito, sans-serif;
+  margin-bottom: 0;
 }
 
-.content-form{
-    border: 1px solid blue;
-    margin: 15px;
-    padding: 10px;
+.title-map-p{
+  margin: 0;
+  line-height: 1.5;
+  color: #9c9c9c;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
-.content-map{
-    border: 1px solid red;
-    margin: 15px;
-    padding: 10px;
+.content-frame-map{
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
 }
