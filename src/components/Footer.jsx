@@ -1,5 +1,4 @@
 import imgLogo from '../images/Logo.png'
-import imgLogoS from '../images/logos.png'
 import "./Footer.css";
 
 export function Footer(){
