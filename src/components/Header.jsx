@@ -1,4 +1,5 @@
 import './Header.css'
+import  logo  from '../images/logos.png'
 
 export function Header() {
   return (
@@ -7,6 +8,7 @@ export function Header() {
         <div className="header-logo">
           <h1 className='header-logo-h1'>ZuluagaVeículos</h1>
         </div>
+          <img src={logo} alt="logo" width={80} height={90} />          
 
         <div className="header-contacto">
           <p className='header-contacto-p'>
