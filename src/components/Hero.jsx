@@ -85,7 +85,6 @@ export function Hero() {
         <div className="hero-content">
           <h1>{slide.title}</h1>
           <p>{slide.description}</p>
-          <button className="hero-button">Más información</button>
         </div>
         <div className="hero-cards">
           {slide.cards.map((card, index) => (

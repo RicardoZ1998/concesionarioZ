@@ -1,190 +1,177 @@
 .hero {
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .hero-image {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: background-image 0.5s ease-in-out;
-  }
-  
-  .hero-content {
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    color: white;
-    max-width: 50%;
-  }
-  
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;
+  max-width: 500px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.hero-button {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.hero-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.hero-cards {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: right;
+  gap: 1rem;
+  padding: 0 5%;
+}
+
+.hero-card {
+  width: 200px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.hero-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.hero-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.hero-card h3 {
+  padding: 0.8rem;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 50%;
+}
+
+.nav-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.nav-button.prev {
+  left: 20px;
+}
+
+.nav-button.next {
+  right: 20px;
+}
+
+@media (max-width: 1024px) {
   .hero-content h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-  }
-  
-  .hero-content p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-  }
-  
-  .hero-button {
-    background: #fff;
-    color: #000;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .hero-button:hover {
-    background-color: #000;
-    color: #fff;
-  }
-  
-  .hero-cards {
-    position: absolute;
-    bottom: 5%;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: right;
-    gap: 1rem;
-    padding-right: 25px;
-  }
-  
-  .hero-card {
-    width: 200px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-  }
-  
-  .hero-card:hover {
-    transform: translateY(-10px);
-  }
-  
-  .hero-card img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-  }
-  
-  .hero-card h3 {
-    padding: 0.5rem;
-    text-align: center;
-    font-size: 0.9rem;
-  }
-  
-  .nav-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 15px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .nav-button:hover {
-    background: rgba(0, 0, 0, 0.8);
-  }
-  
-  .nav-button.prev {
-    left: 10px;
-  }
-  
-  .nav-button.next {
-    right: 10px;
+    font-size: 3rem;
   }
 
-  /* Estilos generales para dispositivos pequeños */
-@media (max-width: 768px) {
-  .hero-content {
-    top: 10%;
-    left: 5%;
-    max-width: 90%;
-  }
-  
-  .hero-content h1 {
-    font-size: 2.5rem;
-  }
-  
   .hero-content p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
-  
-  .hero-button {
-    font-size: 0.9rem;
-    padding: 8px 16px;
-  }
-  
-  .hero-cards {
-    bottom: 3%;
-    padding-right: 15px;
-    justify-content: center;
-  }
-  
+
   .hero-card {
-    width: 150px;
-  }
-  
-  .hero-card img {
-    height: 100px;
-  }
-  
-  .nav-button {
-    font-size: 16px;
-    padding: 10px;
+    width: 180px;
   }
 }
 
-/* Estilos para dispositivos muy pequeños (móviles) */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  .hero-cards {
+    display: none;
+  }
+
   .hero-content {
-    top: 5%;
-    left: 2%;
-    max-width: 95%;
+    max-width: 90%;
+    text-align: center;
   }
-  
+
   .hero-content h1 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
-  
+
   .hero-content p {
     font-size: 1rem;
   }
-  
+
   .hero-button {
-    font-size: 0.8rem;
-    padding: 6px 12px;
+    font-size: 1rem;
+    padding: 10px 20px;
   }
+}
+
+@media (max-width: 480px) {
   
-  .hero-cards {
-    bottom: 2%;
-    padding-right: 10px;
-    flex-direction: column;
-    align-items: center;
+  .hero-content h1 {
+    font-size: 2rem;
   }
-  
+
+  .hero-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
   .hero-card {
-    width: 120px;
+    width: 100%;
   }
-  
-  .hero-card img {
-    height: 80px;
-  }
-  
+
   .nav-button {
-    font-size: 14px;
-    padding: 8px;
+    padding: 10px;
+    font-size: 16px;
   }
 }
