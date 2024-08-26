@@ -31,4 +31,47 @@
     color: rgb(107, 109, 107);
 }
 
-
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .header {
+      height: auto;
+      padding: 10px 0;
+    }
+  
+    .header-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .header-logo-h1 {
+      font-size: 28px;
+      padding-left: 0;
+      margin-bottom: 10px;
+    }
+  
+    .header-contacto-p {
+      font-size: 20px;
+      padding: 0;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .header-logo-h1 {
+      font-size: 24px;
+    }
+  
+    .header-contacto-p {
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .header-logo-h1 {
+      font-size: 30px;
+    }
+  
+    .header-contacto-p {
+      font-size: 22px;
+    }
+  }

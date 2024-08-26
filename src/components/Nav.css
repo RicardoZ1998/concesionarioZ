@@ -77,3 +77,44 @@
     transform: translateX(300%);
   }
   
+  /* Estilos generales para dispositivos pequeños */
+@media (max-width: 768px) {
+  .nav-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  
+  .nav-ul li {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .nav-ul a {
+    font-size: 18px;
+    padding: 10px 0;
+  }
+  
+  .nav {
+    top: 0; /* Ajustar la posición para dispositivos pequeños */
+  }
+  
+  /* Mostrar la línea de subrayado en la parte inferior para dispositivos pequeños */
+  .nav-ul .underline {
+    width: 100%;
+    transform: translateX(0%);
+  }
+  
+  .nav-ul li:hover ~ .underline {
+    transform: translateX(calc(100% * var(--index)));
+  }
+}
+
+/* Estilos para dispositivos muy pequeños (móviles) */
+@media (max-width: 480px) {
+  .nav-ul a {
+    font-size: 16px;
+    padding: 8px 0;
+  }
+}

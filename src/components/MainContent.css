@@ -226,3 +226,99 @@ formulario*/
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   border-radius: 6px;
 }
+
+
+/* Responsive para Section Uno */
+@media (max-width: 768px) {
+  .section-uno .text-titulo {
+    font-size: 18px;
+    padding: 4px;
+  }
+
+  .section-uno-article-uno {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 15px;
+  }
+
+  .content-car img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .button-section-uno {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+/* Responsive para Section Dos */
+@media (max-width: 768px) {
+  .section-dos-article-dos {
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+  }
+
+  .form-wrapper {
+    padding: 30px;
+    margin: 20px;
+  }
+
+  .contactus-head {
+    font-size: 28px;
+  }
+
+  .contactus-subhead {
+    margin-bottom: 30px;
+  }
+
+  .textinput {
+    min-width: 100%;
+  }
+
+  .submit-btn {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .social-media-links {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .link-img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* Responsive para dispositivos muy pequeños (móviles) */
+@media (max-width: 480px) {
+  .section-uno .text-titulo {
+    font-size: 16px;
+  }
+
+  .content-car img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .button-section-uno {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .contactus-head {
+    font-size: 24px;
+  }
+
+  .submit-btn {
+    font-size: 18px;
+  }
+
+  .link-img {
+    width: 20px;
+    height: 20px;
+  }
+}
